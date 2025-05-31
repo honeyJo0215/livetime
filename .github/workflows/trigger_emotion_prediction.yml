@@ -1,0 +1,16 @@
+name: Notify Emotion-Prediction
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch to Emotion-Prediction
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          repository: honeyJo0215/Emotion-Prediction
+          event-type: livetime-release
