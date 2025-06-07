@@ -4,7 +4,7 @@ livetime_model releases
 
 [Python Environment]
 - Python Version: 3.11
-- Environment Manager: Conda (Anaconda or Miniconda)
+- Environment Manager: Conda
 - Environment Name: ai-env
 
 [Dependencies]
